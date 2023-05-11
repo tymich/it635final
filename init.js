@@ -3,7 +3,7 @@ db=db.getSiblingDB("Vinyls");
 db.createCollection("Album");
 db.createCollection("Record Label");
 
-db.createCollection("Artist, {
+db.createCollection("Artist", {
    validator: {
       $jsonSchema: {
         bsonType: "object",
